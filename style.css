@@ -6,10 +6,13 @@
   box-sizing: border-box;
 }
 
+body{
+  background-color: red;
+}
+
 .wrapper {
   background-color: hsl(193, 100%, 96%);
-  padding: 3em;
-  margin: 50px;
+  padding: 2em;
   border-radius: 10px;
   font-family: "Poppins", sans-serif;
 }
@@ -32,6 +35,7 @@
   font-weight: bold;
   background-color: white;
   color: black;
+  margin-left: 50px;
   cursor: pointer;
 }
 
@@ -286,5 +290,114 @@ footer {
     margin-left: 1050px;
     margin-top: 30px;
 }
+
+@media (min-width: 1440px){
+  .wrapper{
+    justify-content: center;
+  }
+
+.hero2 img{
+   width: 50%;
+   margin-left: -30px;
+  }
+
+  .header{
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .btn-logo button{
+    margin-left: -10px;
+  }
+}
+
+@media (max-width: 600px){
+  body{
+    background-color: blueviolet;
+  }
+  .wrapper{
+    width: 100%;
+    margin: auto;
+  }
+
+  .hero{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero2 img{
+    width: 100%;
+    margin: auto;
+  }
+  .hero1 p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  max-width: 600px;
+}
+  .btn-hero{
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn-logo{
+    align-items: center;
+  }
+.btn-logo{
+  padding: 5px;
+  text-align: center;
+  width: 40%;
+  font-size: 14px;
+  font-weight: bold;
+
+}
+.grow, .flow, .users{
+  flex-direction: column;
+  margin-top: 20px;
+  height: 50%;
+  
+}
+.card img{
+  width: 80%;
+  height: 100%;
+   margin-left: -30px;
+}
+.card h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  max-width: 400px;
+}
+.build{
+  margin-left: 50px;
+  width: 500px;
+  
+}
+footer{
+  width: fit-content;
+  height: fit-content;
+  margin: 0;
+}
+.footer{
+  flex-direction: column;
+  justify-content: center;
+}
+
+}
+
+
 
 
